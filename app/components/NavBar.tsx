@@ -1,7 +1,7 @@
 import React from "react";
 
 const NavBar = () => {
-  return <div className="bg-#8C8E8F w-full h-10">hola</div>;
+  return <div className=" bg-red-300 w-full h-20">hola</div>;
 };
 
 export default NavBar;
