@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import Whatsapp from "@/images/whatsapp.png";
+import Whatsapp from "@/images/Whatsapp.png";
 const Footer = () => {
   return (
     <div className=" bg-gradient-light w-full  flex items-center justify-center h-20 ">
