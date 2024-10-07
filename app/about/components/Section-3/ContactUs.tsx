@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Whatsapp from "@/images/whatsapp.png";
+import Whatsapp from "@/images/Whatsapp.png";
 import Car from "@/images/Car.jpg";
 import Link from "next/link";
 
