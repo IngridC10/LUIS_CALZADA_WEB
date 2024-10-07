@@ -12,6 +12,24 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      backgroundImage: {
+        "gradient-light": "linear-gradient(to bottom, #9ca3af , #FFFFFF)",
+        "gradient-background": "linear-gradient(to bottom, #172554, #3AB0E1)",
+      },
+
+      color: {
+        grayButton: "#9ca3af",
+        golden: "#f1c263d1 ",
+      },
+
+      screens: {
+        xs: "375px",
+        sm: "640px",
+        md: "768px",
+        lg: "1024px",
+        xl: "1280px",
+        xxl: "1536px",
+      },
     },
   },
   plugins: [],
