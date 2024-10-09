@@ -20,7 +20,7 @@ const GalleryImagesCarousel = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768);
+      setIsMobile(window.innerWidth <= 768); // Ajusta el tamaño según tus necesidades
     };
 
     handleResize();
