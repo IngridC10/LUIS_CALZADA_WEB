@@ -1,5 +1,4 @@
 "use client";
-import React, { useEffect, useState } from "react";
 import { Carousel } from "flowbite-react";
 import Image from "next/image";
 import "flowbite/dist/flowbite.css";
@@ -15,21 +14,6 @@ const GalleryImagesCarousel = () => {
     { src: Travel3, alt: "Imagen 3", width: 800, height: 400 },
     { src: Travel4, alt: "Imagen 4", width: 800, height: 400 },
   ];
-
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768); // Ajusta el tamaño según tus necesidades
-    };
-
-    handleResize();
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
 
   return (
     <section className="xs:h-[780px] md:h-[788px] xxl:h-[860px] bg-gradient-background">
