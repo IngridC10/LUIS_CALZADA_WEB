@@ -11,7 +11,7 @@ const LogoSection = () => {
     const words = [
       { text: "una", readTime: 2500, deleteTime: 1000 },
       {
-        text: " empresa de servicio de transporte",
+        text: "empresa de servicio de transporte",
         readTime: 4000,
         deleteTime: 1000,
       },
@@ -53,29 +53,30 @@ const LogoSection = () => {
     changeWord();
 
     return () => {
-      if (typingEffectRef.current) {
-        typingEffectRef.current.style.animation = "none";
+      const currentRef = typingEffectRef.current;
+      if (currentRef) {
+        currentRef.style.animation = "none";
       }
     };
   }, []);
 
   return (
-    <div className="   logo-section  flex flex-col items-center   xs:h-[600px]  sm:h-[610px]   md:h-[601px]  xxl:h-[512px]  justify-center m-auto">
+    <div className="logo-section flex flex-col items-center xs:h-[600px] sm:h-[610px] md:h-[601px] xxl:h-[512px] justify-center m-auto">
       <Image
         src={Minivan}
         alt="logo"
         width={240}
         height={150}
-        className=" xs:w-[145px] md:w-[220px]   xxl:w-[240px]"
+        className="xs:w-[145px] md:w-[220px] xxl:w-[240px]"
       />
       <Image
         src={Text}
         alt="logo"
         width={280}
-        className="ml-4 w-[339px] mt-5  xs:w-[200px] md:w-[249px] xxl:w-[280px]   "
+        className="ml-4 w-[339px] mt-5 xs:w-[200px] md:w-[249px] xxl:w-[280px]"
       />
 
-      <h2 className="  2xl:text-[50px] text-[20px] text-black mt-14 flex justify-center">
+      <h2 className="2xl:text-[50px] text-[20px] text-black mt-14 flex justify-center">
         Somos <span className="typing-effect" ref={typingEffectRef}></span>
       </h2>
     </div>
