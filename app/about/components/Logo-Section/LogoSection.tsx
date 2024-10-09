@@ -52,6 +52,7 @@ const LogoSection = () => {
 
     changeWord();
 
+    // Copia de la referencia para la limpieza
     return () => {
       const currentRef = typingEffectRef.current;
       if (currentRef) {
