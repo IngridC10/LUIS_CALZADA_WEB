@@ -56,10 +56,10 @@ const Testimonials = () => {
   };
 
   return (
-    <section className=" xs:p-2 xxl:p-0 xs:h-[910px] sm:h-[755px]  md:h-[620px]   xxl:h-[447px] items-center    w-full py-20 bg-gradient-background text-white  xs:flex-col  md:flex-col  xxl:flex-row flex ">
-      <div className=" xs:flex-col  md:flex-col xxl:flex-row   max-w-7xl mx-auto gap-20 flex  ">
+    <section className="xs:p-2 xxl:p-0 xs:h-[910px] sm:h-[755px] md:h-[620px] xxl:h-[447px] items-center w-full py-20 bg-gradient-background text-white xs:flex-col md:flex-col xxl:flex-row flex">
+      <div className="xs:flex-col md:flex-col xxl:flex-row max-w-7xl mx-auto gap-20 flex">
         <div className="flex-1 text-center pr-8">
-          <h2 className="  xs:m-3  md:m-0 xxl:m-0      xs:text-[18px] md:text-[22px] xxl:text-[27px] text-start font-bold mb-8">
+          <h2 className="xs:m-3 md:m-0 xxl:m-0 xs:text-[18px] md:text-[22px] xxl:text-[27px] text-start font-bold mb-8">
             Testimonios de Nuestros Clientes
           </h2>
           <div
@@ -87,9 +87,9 @@ const Testimonials = () => {
             >
               {"<"}
             </button>
-            <div className="bg-gradient-light p-6 rounded-lg shadow-md text-black   xs:h-[300px]   md:h-[190px]  xxl:h-[190px]   xs:w-[226px]   md:w-[550px] xxl:w-[550px] flex flex-col justify-center">
+            <div className="bg-gradient-light p-6 rounded-lg shadow-md text-black xs:h-[300px] md:h-[190px] xxl:h-[190px] xs:w-[226px] md:w-[550px] xxl:w-[550px] flex flex-col justify-center">
               <p className="text-lg font-bold">
-                "{testimonials[currentIndex].message}"
+                &quot;{testimonials[currentIndex].message}&quot;
               </p>
               <h3 className="mt-4 text-lg font-semibold">
                 {testimonials[currentIndex].name}
@@ -119,10 +119,10 @@ const Testimonials = () => {
         </div>
 
         <div className="flex-1 text-left">
-          <h1 className=" xs:text-[18px] md:text-[27px] xs:ml-2  xxl:ml-0 xxl:text-[27px] font-bold">
+          <h1 className="xs:text-[18px] md:text-[27px] xs:ml-2 xxl:ml-0 xxl:text-[27px] font-bold">
             ¿Por qué elegirnos?
           </h1>
-          <ul className="leading-10 xs:text-[14px] xs:p-3 xxl:p-0   xxl:text-[23px]">
+          <ul className="leading-10 xs:text-[14px] xs:p-3 xxl:p-0 xxl:text-[23px]">
             <li>☉ Experiencias personalizadas en cada viaje.</li>
             <li>☉ Conductores capacitados y amables.</li>
             <li>☉ Vehículos seguros y confiables.</li>
