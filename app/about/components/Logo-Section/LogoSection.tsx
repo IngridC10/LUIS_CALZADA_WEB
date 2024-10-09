@@ -35,13 +35,16 @@ const LogoSection = () => {
         typingEffect.style.animation = "none";
 
         setTimeout(() => {
-          typingEffect.textContent = text;
-
-          typingEffect.style.animation = `typing 3s steps(${text.length}, end), blink-caret 0.75s step-end infinite`;
+          if (typingEffect) {
+            typingEffect.textContent = text;
+            typingEffect.style.animation = `typing 3s steps(${text.length}, end), blink-caret 0.75s step-end infinite`;
+          }
         }, 30);
 
         setTimeout(() => {
-          typingEffect.style.animation = `delete 1s steps(${text.length}, end), blink-caret 0.75s steps(2, end)`;
+          if (typingEffect) {
+            typingEffect.style.animation = `delete 1s steps(${text.length}, end), blink-caret 0.75s steps(2, end)`;
+          }
         }, readTime);
 
         wordIndex = (wordIndex + 1) % words.length;
@@ -53,7 +56,7 @@ const LogoSection = () => {
     changeWord();
 
     return () => {
-      const currentRef = typingEffectRef.current;
+      const currentRef = typingEffectRef.current; // Guardar referencia en una variable
       if (currentRef) {
         currentRef.style.animation = "none";
       }
