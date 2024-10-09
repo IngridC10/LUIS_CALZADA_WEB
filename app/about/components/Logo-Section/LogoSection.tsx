@@ -52,7 +52,6 @@ const LogoSection = () => {
 
     changeWord();
 
-    // Copia de la referencia para la limpieza
     return () => {
       const currentRef = typingEffectRef.current;
       if (currentRef) {
@@ -77,8 +76,9 @@ const LogoSection = () => {
         className="ml-4 w-[339px] mt-5 xs:w-[200px] md:w-[249px] xxl:w-[280px]"
       />
 
-      <h2 className="2xl:text-[50px] text-[20px] text-black mt-14 flex justify-center">
-        Somos <span className="typing-effect" ref={typingEffectRef}></span>
+      <h2 className="2xl:text-[50px] text-[17px] text-black mt-14 flex justify-center">
+        Somos
+        <span className="typing-effect" ref={typingEffectRef}></span>
       </h2>
     </div>
   );

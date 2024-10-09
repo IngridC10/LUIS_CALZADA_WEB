@@ -56,9 +56,9 @@ const Testimonials = () => {
   };
 
   return (
-    <section className="xs:p-2 xxl:p-0 xs:h-[910px] sm:h-[755px] md:h-[620px] xxl:h-[447px] items-center w-full py-20 bg-gradient-background text-white xs:flex-col md:flex-col xxl:flex-row flex">
+    <section className="xs:p-2 xxl:p-0 xs:h-[910px] sm:h-[755px] md:h-[641px] xxl:h-[447px] items-center w-full py-20 bg-gradient-background text-white xs:flex-col md:flex-col xxl:flex-row flex">
       <div className="xs:flex-col md:flex-col xxl:flex-row max-w-7xl mx-auto gap-20 flex">
-        <div className="flex-1 text-center pr-8">
+        <div className="flex-1 text-center ">
           <h2 className="xs:m-3 md:m-0 xxl:m-0 xs:text-[18px] md:text-[22px] xxl:text-[27px] text-start font-bold mb-8">
             Testimonios de Nuestros Clientes
           </h2>
@@ -87,7 +87,7 @@ const Testimonials = () => {
             >
               {"<"}
             </button>
-            <div className="bg-gradient-light p-6 rounded-lg shadow-md text-black xs:h-[300px] md:h-[190px] xxl:h-[190px] xs:w-[226px] md:w-[550px] xxl:w-[550px] flex flex-col justify-center">
+            <div className="bg-gradient-light p-6 rounded-lg shadow-md text-black xs:h-[300px] mt-[23px]   md:h-[190px] xxl:h-[190px] xs:w-[226px] md:w-[550px] xxl:w-[550px] flex flex-col justify-center">
               <p className="text-lg font-bold">
                 &quot;{testimonials[currentIndex].message}&quot;
               </p>
