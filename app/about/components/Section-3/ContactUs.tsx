@@ -48,7 +48,7 @@ const ContactUs = () => {
           </div>
         </div>
 
-        <div className="w-[500px] flex  xs:justify-start md:justify-end  xxl:justify-end items-center">
+        <div className=" flex  xs:justify-start md:justify-end  xxl:justify-end items-center">
           <Image src={Car} alt="car" width={200} height={200} />
         </div>
       </div>

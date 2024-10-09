@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useEffect, useState } from "react";
 import { Carousel } from "flowbite-react";
 import Image from "next/image";
 import "flowbite/dist/flowbite.css";
@@ -15,8 +16,23 @@ const GalleryImagesCarousel = () => {
     { src: Travel4, alt: "Imagen 4", width: 800, height: 400 },
   ];
 
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
-    <section className=" xs:h-[780px] md:h-[788px] xxl:h-[860px] bg-gradient-background">
+    <section className="xs:h-[780px] md:h-[788px] xxl:h-[860px] bg-gradient-background">
       <Carousel slideInterval={5000}>
         {images.map((image, index) => (
           <div key={index} className="flex justify-center items-center">
@@ -25,7 +41,7 @@ const GalleryImagesCarousel = () => {
               alt={image.alt}
               width={image.width}
               height={image.height}
-              className="object-cover  xs:w-[300px]  md:w-[500px]  xxl:w-[970px]    xs:h-[400px] md:h-[500px]   xxl:h-[650px] "
+              className="object-cover xs:w-[300px] md:w-[500px] xxl:w-[970px] xs:h-[400px] md:h-[500px] xxl:h-[650px]"
             />
           </div>
         ))}
