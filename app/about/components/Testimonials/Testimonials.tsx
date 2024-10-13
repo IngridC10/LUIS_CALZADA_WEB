@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 
 const testimonials = [
   {
@@ -24,13 +24,28 @@ const testimonials = [
 
 const Testimonials = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [fadeInClass, setFadeInClass] = useState("fade-in-right");
+  const [activeButton, setActiveButton] = useState<"next" | "prev" | null>(
+    null
+  ); // Estado para manejar el botón activo
   const startX = useRef(0);
 
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setFadeInClass(""); // Remueve la clase para reiniciar la animación
+    }, 2000); // Duración de la animación
+    return () => clearTimeout(timer); // Limpia el temporizador al desmontar
+  }, [fadeInClass]);
+
   const handleNext = () => {
+    setActiveButton("next"); // Cambiar el botón activo
+    setFadeInClass("fade-in-right");
     setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
   };
 
   const handlePrev = () => {
+    setActiveButton("prev"); // Cambiar el botón activo
+    setFadeInClass("fade-in-right");
     setCurrentIndex(
       (prevIndex) => (prevIndex - 1 + testimonials.length) % testimonials.length
     );
@@ -83,24 +98,30 @@ const Testimonials = () => {
           >
             <button
               onClick={handlePrev}
-              className="text-lg px-4 py-2 bg-gray-300 rounded-full mr-3 w-[50px] h-[50px]"
+              className={`text-lg px-4 py-2 rounded-full mr-3 w-[50px] h-[50px] ${
+                activeButton === "prev" ? "bg-blue-300" : "bg-gray-300"
+              }`}
             >
               {"<"}
             </button>
-            <div className="bg-gradient-light p-6 rounded-lg shadow-md text-black xs:h-[300px] mt-[23px]   md:h-[190px] xxl:h-[190px] xs:w-[226px] md:w-[550px] xxl:w-[550px] flex flex-col justify-center">
-              <p className="text-lg font-bold">
+            <div
+              className={`bg-gradient-light p-6 rounded-lg shadow-md text-black xs:h-[300px] mt-[23px] md:h-[190px] xxl:h-[190px] xs:w-[226px] md:w-[550px] xxl:w-[550px] flex flex-col justify-center ${fadeInClass}`}
+            >
+              <p className="text-lg ">
                 &quot;{testimonials[currentIndex].message}&quot;
               </p>
-              <h3 className="mt-4 text-lg font-semibold">
+              <h3 className="mt-4 text-lg ">
                 {testimonials[currentIndex].name}
               </h3>
-              <p className="text-lg text-black font-bold">
+              <p className="text-lg text-black ">
                 {testimonials[currentIndex].location}
               </p>
             </div>
             <button
               onClick={handleNext}
-              className="text-lg px-4 py-2 bg-gray-300 rounded-full ml-3 w-[50px] h-[50px]"
+              className={`text-lg px-4 py-2 rounded-full ml-3 w-[50px] h-[50px] ${
+                activeButton === "next" ? "bg-blue-300" : "bg-gray-300"
+              }`}
             >
               {">"}
             </button>
@@ -122,7 +143,7 @@ const Testimonials = () => {
           <h1 className="xs:text-[18px] md:text-[27px] xs:ml-2 xxl:ml-0 xxl:text-[27px] font-bold">
             ¿Por qué elegirnos?
           </h1>
-          <ul className="leading-10 xs:text-[14px] xs:p-3 xxl:p-0 xxl:text-[23px]">
+          <ul className="leading-10 xs:text-[16px] xs:p-3 xxl:p-0 xxl:text-[23px]">
             <li>☉ Experiencias personalizadas en cada viaje.</li>
             <li>☉ Conductores capacitados y amables.</li>
             <li>☉ Vehículos seguros y confiables.</li>

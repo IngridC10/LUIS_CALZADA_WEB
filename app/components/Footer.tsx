@@ -9,10 +9,7 @@ const Footer = () => {
         Lucho Travel Services © 2024 | Todos los derechos reservados
       </p>
       <div>
-        <Link
-          target="_blank"
-          href="https://api.whatsapp.com/send?phone=51941363231&text=Hola%20%2C%C2%BFTe%20gustar%C3%ADa%20programar%20un%20viaje%20o%20solicitar%20un%20presupuesto%3F%20"
-        >
+        <Link target="_blank" href="https://w.app/1yfSi6">
           <Image
             src={Whatsapp}
             alt="whatsapp"
