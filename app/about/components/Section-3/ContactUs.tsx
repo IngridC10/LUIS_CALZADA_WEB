@@ -39,7 +39,7 @@ const ContactUs = () => {
     <section
       id="contact"
       ref={sectionRef}
-      className="w-full bg-white xs:h-[602px] md:h-[600px] xxl:h-[300px] flex flex-row justify-center items-center"
+      className="w-full bg-white xs:h-[624px] md:h-[600px] xxl:h-[300px] flex flex-row justify-center items-center"
     >
       <div className="xs:flex-col md:flex-col xxl:flex-row xs:w-[360px] md:w-[1280px] xxl:w-[1280px] mx-auto gap-20 flex">
         <div className="xs:p-3 xxl:p-0 xs:w-[362px] md:w-[755px] xxl:w-[800px] leading-10 text-justify">

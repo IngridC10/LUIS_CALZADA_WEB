@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import LogoCar from "@/images/LogoCar.png";
@@ -17,10 +17,25 @@ const NavBar = () => {
     setIsMenuOpen(false);
   };
 
+  useEffect(() => {
+    if (isMenuOpen) {
+      // Deshabilitar el scroll
+      document.body.style.overflow = "hidden";
+    } else {
+      // Restaurar el scroll
+      document.body.style.overflow = "";
+    }
+
+    // Limpiar el efecto al desmontar
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isMenuOpen]);
+
   return (
     <div className="bg-gradient-light fixed w-full flex items-center xs:justify-between md:justify-end xl:justify-center xs:h-40 md:h-40 xxl:h-20 p-4 z-50">
       <div className="flex items-center">
-        <ul className="xl:block hidden xs:gap-0 md:gap-3 xxl:gap-40  xs:text-[18px] xxl:text-[20px] font-bold">
+        <ul className="xl:block hidden xs:gap-0 md:gap-3 xxl:gap-40 xs:text-[18px] xxl:text-[20px] font-bold">
           {["/", "/#about", "/#contact"].map((link, index) => {
             const titles = ["Home", "¿Quiénes somos?", "Contáctanos"];
             return (
@@ -57,7 +72,7 @@ const NavBar = () => {
       </button>
 
       {isMenuOpen && (
-        <div className="fixed inset-0 bg-gradient-background  menuSlideDown flex flex-col items-center justify-center z-50 transition-transform duration-300 ease-in-out transform">
+        <div className="fixed inset-0 bg-gradient-background menuSlideDown flex flex-col items-center justify-center z-50 transition-transform duration-300 ease-in-out transform">
           <button
             onClick={toggleMenu}
             className="text-white absolute top-4 right-4"
