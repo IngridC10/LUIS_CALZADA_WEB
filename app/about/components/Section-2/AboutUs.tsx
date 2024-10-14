@@ -42,9 +42,9 @@ const AboutUs = () => {
       <div className="xs:justify-center xs:items-center flex xs:flex-col md:flex-col xxl:flex-row w-full max-w-7xl mx-auto gap-20">
         <div className="xs:w-[340px] md:w-[500px] xxl:w-1/2 flex justify-center items-center">
           <div className="xs:w-[420px] md:w-[500px] xxl:w-[800px] xs:h-[517px] md:h-[500px] xxl:h-[500px] flex flex-col justify-center items-center bg-gradient-light rounded-[30px] p-5 xs:text-[16px] md:text-[22px] xxl:text-[22px] leading-10 shadow-md text-justify">
-            <p>
-              <span>Bienvenidos</span> <br />
-              <span className="text-blue-950 font-bold text-xl">
+            <p className="text-black">
+              <span className="text-black">Bienvenidos</span> <br />
+              <span className="text-blue-950 font-bold italic text-xl">
                 LUCHO TRAVEL SERVICES
               </span>
               <br />

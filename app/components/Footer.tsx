@@ -5,9 +5,11 @@ import Whatsapp from "@/images/Whatsapp.png";
 const Footer = () => {
   return (
     <div className=" bg-gradient-light w-full  flex items-center justify-center h-20 ">
-      <p className=" flex gap-40 text-center items-center xs:text-[14px]  md:text-[20px]  xxl:text-[20px] font-thin">
-        Lucho Travel Services © 2024 | Todos los derechos reservados
-      </p>
+      <div className="    xs:w-[400px]  lg:w-[600px]">
+        <p className=" flex gap-40 text-center items-center xs:text-[14px]  md:text-[20px]  xxl:text-[20px] font-thin">
+          Lucho Travel Services © 2024 | Todos los derechos reservados
+        </p>
+      </div>
       <div>
         <Link target="_blank" href="https://w.app/1yfSi6">
           <Image

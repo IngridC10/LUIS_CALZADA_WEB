@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useRef } from "react";
 import Image from "next/image";
-import Minivan from "@/images/Minivan.jpg";
+import LogoCar from "@/images/LogoCar.png";
 import Text from "@/images/Text.png";
 
 const LogoSection = () => {
@@ -66,7 +66,7 @@ const LogoSection = () => {
   return (
     <div className="logo-section bg-white flex flex-col items-center xs:h-[600px] sm:h-[610px] md:h-[601px] xxl:h-[512px] justify-center m-auto">
       <Image
-        src={Minivan}
+        src={LogoCar}
         alt="logo"
         width={240}
         height={150}

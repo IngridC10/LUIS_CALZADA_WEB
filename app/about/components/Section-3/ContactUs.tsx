@@ -2,7 +2,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Whatsapp from "@/images/Whatsapp.png";
-import Car from "@/images/Car.jpg";
+import Car from "@/images/Car.png";
 import Link from "next/link";
 
 const ContactUs = () => {
@@ -43,7 +43,7 @@ const ContactUs = () => {
     >
       <div className="xs:flex-col md:flex-col xxl:flex-row xs:w-[360px] md:w-[1280px] xxl:w-[1280px] mx-auto gap-20 flex">
         <div className="xs:p-3 xxl:p-0 xs:w-[362px] md:w-[755px] xxl:w-[800px] leading-10 text-justify">
-          <p className="xs:text-[16px] md:text-[22px] xxl:text-[22px]">
+          <p className="text-black xs:text-[16px] md:text-[22px] xxl:text-[22px]">
             <span className="font-bold text-blue-950">CONTÁCTENOS</span> <br />
             Nos ponemos a su disposición en Lucho Travel Services, donde podrá
             cotizar su traslado, viaje u otro servicio, con la comodidad y
