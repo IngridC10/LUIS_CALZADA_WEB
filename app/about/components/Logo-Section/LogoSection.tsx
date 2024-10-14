@@ -56,7 +56,7 @@ const LogoSection = () => {
     changeWord();
 
     return () => {
-      const currentRef = typingEffectRef.current; // Guardar referencia en una variable
+      const currentRef = typingEffectRef.current;
       if (currentRef) {
         currentRef.style.animation = "none";
       }
@@ -64,7 +64,7 @@ const LogoSection = () => {
   }, []);
 
   return (
-    <div className="logo-section bg-white flex flex-col items-center xs:h-[600px] sm:h-[610px] md:h-[601px] xxl:h-[512px] justify-center m-auto">
+    <div className="logo-section bg-white flex flex-col items-center xs:h-[517px] sm:h-[610px] md:h-[623px] xxl:h-[630px] justify-center m-auto">
       <Image
         src={LogoCar}
         alt="logo"
@@ -76,7 +76,7 @@ const LogoSection = () => {
         src={Text}
         alt="logo"
         width={280}
-        className="ml-4 w-[339px] mt-5 xs:w-[260px] md:w-[249px] xxl:w-[280px]"
+        className="w-[339px]  xs:w-[320px] md:w-[330px] xxl:w-[360px]"
       />
 
       <h2 className="2xl:text-[50px] text-[17px] text-black mt-14 flex justify-center">
