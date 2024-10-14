@@ -5,7 +5,7 @@ const testimonials = [
   {
     name: "María Pérez",
     message:
-      "Excelente servicio, el transporte fue puntual y cómodo. ¡Recomiendo mucho Lucho Travel Services!",
+      "Excelente servicio, el transporte fue puntual y cómodo. ¡Recomiendo mucho a Lucho Travel Services!",
     location: "Lima, Perú",
   },
   {
