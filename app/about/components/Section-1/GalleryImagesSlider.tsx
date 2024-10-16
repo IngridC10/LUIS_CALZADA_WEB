@@ -40,10 +40,10 @@ const GalleryImagesCarousel = () => {
   ];
 
   return (
-    <section className="xs:h-[639px] md:h-[788px] xxl:h-[860px] bg-gradient-background">
+    <section className="xs:h-[639px] md:h-[788px] xl:h-[860px] bg-gradient-background">
       <div className="h-full">
         <div className="h-20 flex justify-center items-end">
-          <h1 className="font-lilita text-white xs:text-[21px] xxl:text-[27px] text-center">
+          <h1 className="font-lilita text-white xs:text-[21px] xl:text-[27px] text-center">
             FOTOS DE NUESTROS DESTINOS
           </h1>
         </div>
@@ -58,11 +58,11 @@ const GalleryImagesCarousel = () => {
                 alt={image.alt}
                 width={image.width}
                 height={image.height}
-                className="object-cover xs:w-[300px] md:w-[500px] xxl:w-[970px] xs:h-[400px] md:h-[500px] xxl:h-[650px]"
+                className="object-cover xs:w-[300px] md:w-[500px] xl:w-[970px] xs:h-[400px] md:h-[500px] xl:h-[650px]"
               />
               {/* Superponer el nombre del lugar en el centro */}
               <div className="absolute inset-0 flex items-center justify-center">
-                <h2 className=" xs:text-[30px]  xxl:text-6xl font-bold text-white bg-black bg-opacity-50 px-4 py-2 rounded">
+                <h2 className=" xs:text-[30px]  xl:text-6xl font-bold text-white bg-black bg-opacity-50 px-4 py-2 rounded">
                   {image.location}
                 </h2>
               </div>

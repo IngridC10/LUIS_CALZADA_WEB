@@ -35,7 +35,7 @@ const NavBar = () => {
   return (
     <div className="bg-gradient-light fixed w-full flex items-center xs:justify-between md:justify-end xl:justify-center h-24  p-4 z-50">
       <div className="flex items-center">
-        <ul className="xl:block hidden xs:gap-0 md:gap-3 xxl:gap-40 xs:text-[18px] xxl:text-[20px] font-bold">
+        <ul className=" text-black xl:block hidden xs:gap-0 md:gap-3 xl:gap-40 xs:text-[18px] xl:text-[20px] font-bold">
           {["/", "/#about", "/#contact"].map((link, index) => {
             const titles = ["Home", "¿Quiénes somos?", "Contáctanos"];
             return (

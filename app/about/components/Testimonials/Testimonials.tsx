@@ -71,10 +71,10 @@ const Testimonials = () => {
   };
 
   return (
-    <section className="xs:p-2 xxl:p-0 xs:h-[910px] sm:h-[773px] md:h-[774px] xxl:h-[447px] items-center justify-center w-full py-20 bg-gradient-background text-white xs:flex-col md:flex-col xxl:flex-row flex">
-      <div className="xs:flex-col md:flex-col xxl:flex-row xxl:w-[1280px] mx-auto gap-20 flex">
+    <section className="xs:p-2 xl:p-0 xs:h-[910px] sm:h-[773px] md:h-[774px] xl:h-[447px] items-center justify-center w-full py-20 bg-gradient-background text-white xs:flex-col md:flex-col xl:flex-row flex">
+      <div className="xs:flex-col md:flex-col xl:flex-row xl:w-[1280px] mx-auto gap-20 flex">
         <div className="flex-1 text-center ">
-          <h2 className="xs:m-3 md:m-0 xxl:m-0 xs:text-[21px]  xxl:text-[27px]  xs:text-center   md:text-start  xxl:text-start font-bold font-lilita  mb-8">
+          <h2 className="xs:m-3 md:m-0 xl:m-0 xs:text-[21px]  xl:text-[27px]  xs:text-center   md:text-start  xl:text-start font-bold font-lilita  mb-8">
             TESTIMONIOS DE NUESTROS CLIENTES
           </h2>
           <div
@@ -105,7 +105,7 @@ const Testimonials = () => {
               {"<"}
             </button>
             <div
-              className={`bg-gradient-light p-6 rounded-lg shadow-md text-black xs:h-[300px] mt-[23px] md:h-[190px] xxl:h-[190px] xs:w-[226px] md:w-[550px] xxl:w-[550px] flex flex-col justify-center ${fadeInClass}`}
+              className={`bg-gradient-light p-6 rounded-lg shadow-md text-black xs:h-[300px] mt-[23px] md:h-[190px] xl:h-[190px] xs:w-[226px] md:w-[550px] xl:w-[550px] flex flex-col justify-center ${fadeInClass}`}
             >
               <p className="text-lg ">
                 &quot;{testimonials[currentIndex].message}&quot;
@@ -140,10 +140,10 @@ const Testimonials = () => {
         </div>
 
         <div className="flex-1 text-left">
-          <h1 className=" text-white  xs:text-[18px] md:text-[27px] xs:ml-2 xxl:ml-0 xxl:text-[27px] font-bold">
+          <h1 className=" text-white  xs:text-[18px] md:text-[27px] xs:ml-2 xl:ml-0 xl:text-[27px] font-bold">
             ¿Por qué elegirnos?
           </h1>
-          <ul className=" text-white leading-10 xs:text-[16px] xs:p-3 xxl:p-0 xxl:text-[23px]">
+          <ul className=" text-white leading-10 xs:text-[16px] xs:p-3 xl:p-0 xl:text-[23px]">
             <li>☉ Experiencias personalizadas en cada viaje.</li>
             <li>☉ Conductores capacitados y amables.</li>
             <li>☉ Vehículos seguros y confiables.</li>
