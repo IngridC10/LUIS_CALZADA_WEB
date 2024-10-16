@@ -2,7 +2,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import TravelImage from "@/images/TravelImage.jpg";
-import Text from "@/images/Text.png";
 
 const AboutUs = () => {
   const [isImageVisible, setIsImageVisible] = useState(false);
