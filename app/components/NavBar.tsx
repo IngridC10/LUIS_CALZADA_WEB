@@ -33,7 +33,7 @@ const NavBar = () => {
   }, [isMenuOpen]);
 
   return (
-    <div className="bg-gradient-light fixed w-full flex items-center xs:justify-between md:justify-end xl:justify-center xs:h-24 md:h-40 xxl:h-20 p-4 z-50">
+    <div className="bg-gradient-light fixed w-full flex items-center xs:justify-between md:justify-end xl:justify-center h-24  p-4 z-50">
       <div className="flex items-center">
         <ul className="xl:block hidden xs:gap-0 md:gap-3 xxl:gap-40 xs:text-[18px] xxl:text-[20px] font-bold">
           {["/", "/#about", "/#contact"].map((link, index) => {

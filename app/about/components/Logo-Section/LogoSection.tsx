@@ -64,25 +64,25 @@ const LogoSection = () => {
   }, []);
 
   return (
-    <div className="logo-section bg-white flex flex-col items-center xs:h-[517px] sm:h-[610px] md:h-[623px] xxl:h-[630px] justify-center m-auto">
+    <div className="logo-section bg-white flex flex-col items-center xs:h-[300px]  xxl:h-[330px] justify-center m-auto">
       <Image
         src={LogoCar}
         alt="logo"
         width={240}
         height={150}
-        className="xs:w-[189px] md:w-[220px] xxl:w-[240px]"
+        className="xs:w-[189px] md:w-[220px] xxl:w-[240px] xs:mt-12"
       />
-      <Image
+      {/* <Image
         src={Text}
         alt="logo"
         width={280}
         className="w-[339px]  xs:w-[320px] md:w-[330px] xxl:w-[360px]"
-      />
+      /> */}
 
-      <h2 className="2xl:text-[50px] text-[17px] text-black mt-14 flex justify-center">
+      {/* <h2 className="2xl:text-[50px] text-[17px] text-black mt-14 flex justify-center">
         Somos
         <span className="typing-effect" ref={typingEffectRef}></span>
-      </h2>
+      </h2> */}
     </div>
   );
 };

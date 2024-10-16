@@ -12,14 +12,25 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+
+      fontFamily: {
+        sans: ["DMSans", "sans-serif"],
+        lilita: ['"Lilita One"', "sans-serif"],
+        openSans: ['"Open Sans"', "sans-serif"],
+      },
+
       backgroundImage: {
         "gradient-light": "linear-gradient(to bottom, #9ca3af , #FFFFFF)",
         "gradient-background": "linear-gradient(to bottom, #172554, #3AB0E1)",
+        "gradient-background-dark":
+          "linear-gradient(to bottom, #9ca3af , #000000)",
+        blueDark: "#172554",
       },
 
       color: {
         grayButton: "#9ca3af",
         golden: "#f1c263d1 ",
+        blueDark: "#172554",
       },
 
       screens: {
