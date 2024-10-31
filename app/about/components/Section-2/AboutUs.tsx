@@ -44,7 +44,7 @@ const AboutUs = () => {
           <h1 className="font-lilita text-white xs:text-[21px]  xl:text-[27px]">
             ¿QUIÉNES SOMOS?
           </h1>
-          <div className="xs:w-[353px] md:w-[500px] mt-2 xl:w-[600px] xs:h-[517px] md:h-[500px] xl:h-[500px] flex flex-col justify-center items-center bg-gradient-light rounded-[30px] p-5 xs:text-[16px] xl:text-[22px] leading-10 shadow-md text-justify">
+          <div className="xs:w-[329px] md:w-[500px] mt-2 xl:w-[600px] xs:h-[517px] md:h-[500px] xl:h-[500px] flex flex-col justify-center items-center bg-gradient-light rounded-[30px] p-5 xs:text-[16px] xl:text-[22px] leading-10 shadow-md text-justify">
             <p className="text-black">
               <span className="text-black">Somos </span>
               <span className="text-blue-950 font-bold  xs:text-[18px] xl:text-xl">

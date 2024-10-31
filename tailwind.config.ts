@@ -31,6 +31,7 @@ const config: Config = {
         grayButton: "#9ca3af",
         golden: "#f1c263d1 ",
         blueDark: "#172554",
+        goldenColor: "#B58F44",
       },
 
       screens: {
