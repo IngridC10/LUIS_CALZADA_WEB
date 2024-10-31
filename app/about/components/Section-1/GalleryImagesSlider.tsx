@@ -7,12 +7,11 @@ import Travel2 from "@/images/Travel2.jpg";
 import Travel3 from "@/images/Travel3.jpg";
 import Travel4 from "@/images/Travel4.jpg";
 import Travel5 from "@/images/Travel5.png";
-import { useState } from "react";
 import { useSwipeable } from "react-swipeable";
+import { useRef } from "react";
 
 const GalleryImagesCarousel = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [carouselRef, setCarouselRef] = useState<HTMLDivElement | null>(null);
+  const carouselRef = useRef<HTMLDivElement | null>(null);
 
   const images = [
     {
@@ -53,20 +52,14 @@ const GalleryImagesCarousel = () => {
   ];
 
   const handleNext = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === images.length - 1 ? 0 : prevIndex + 1
-    );
-    const nextButton = carouselRef?.querySelector(
+    const nextButton = carouselRef.current?.querySelector(
       '[data-testid="carousel-right-control"]'
     ) as HTMLElement;
     nextButton?.click();
   };
 
   const handlePrev = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? images.length - 1 : prevIndex - 1
-    );
-    const prevButton = carouselRef?.querySelector(
+    const prevButton = carouselRef.current?.querySelector(
       '[data-testid="carousel-left-control"]'
     ) as HTMLElement;
     prevButton?.click();
@@ -117,7 +110,7 @@ const GalleryImagesCarousel = () => {
 
         <div
           {...handlers}
-          ref={(el) => setCarouselRef(el)}
+          ref={carouselRef}
           className="h-full"
           onTouchStart={handleTouchStart}
         >
