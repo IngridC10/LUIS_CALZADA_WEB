@@ -31,6 +31,17 @@ const Testimonials = () => {
   const startX = useRef(0);
 
   useEffect(() => {
+    // Cambia el índice automáticamente cada 4 segundos
+    const interval = setInterval(() => {
+      setFadeInClass("fade-in-right");
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
+    }, 6000); // Cambia cada 4000 ms (4 segundos)
+
+    // Limpiar el intervalo al desmontar
+    return () => clearInterval(interval);
+  }, []);
+
+  useEffect(() => {
     const timer = setTimeout(() => {
       setFadeInClass(""); // Remueve la clase para reiniciar la animación
     }, 2000); // Duración de la animación

@@ -58,7 +58,7 @@ const ContactUs = () => {
 
           <div className="flex items-center">
             <Link
-              href="https://w.app/1yfSi6"
+              href="https://wa.link/7mq9za"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -67,7 +67,7 @@ const ContactUs = () => {
               </button>
             </Link>
 
-            <Link target="_blank" href="https://w.app/1yfSi6">
+            <Link target="_blank" href="https://wa.link/7mq9za">
               <Image
                 src={Whatsapp}
                 alt="whatsapp"

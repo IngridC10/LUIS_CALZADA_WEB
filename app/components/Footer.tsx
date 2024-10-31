@@ -11,7 +11,7 @@ const Footer = () => {
         </p>
       </div>
       <div>
-        <Link target="_blank" href="https://w.app/1yfSi6">
+        <Link target="_blank" href="https://wa.link/7mq9za">
           <Image
             src={Whatsapp}
             alt="whatsapp"

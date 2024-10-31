@@ -40,14 +40,14 @@ const GalleryImagesCarousel = () => {
   ];
 
   return (
-    <section className="xs:h-[639px] md:h-[788px] xl:h-[860px] bg-gradient-background">
-      <div className="h-full">
+    <section className="xs:h-[600px] md:h-[808px] pt-24 xl:h-[920px] bg-gradient-background">
+      <div className="xs:h-[80%] xl:h-[90%] ">
         <div className="h-20 flex justify-center items-end">
-          <h1 className="font-lilita text-white xs:text-[21px] xl:text-[27px] text-center">
+          <h1 className="font-lilita text-white xs:text-[22px] xl:text-[27px] text-center">
             FOTOS DE NUESTROS DESTINOS
           </h1>
         </div>
-        <Carousel slideInterval={5000} className="h-[90%]">
+        <Carousel slideInterval={4000} className=" xl:h-[90%] xs:h-[80%]">
           {images.map((image, index) => (
             <div
               key={index}
@@ -58,7 +58,7 @@ const GalleryImagesCarousel = () => {
                 alt={image.alt}
                 width={image.width}
                 height={image.height}
-                className="object-cover xs:w-[300px] md:w-[500px] xl:w-[970px] xs:h-[400px] md:h-[500px] xl:h-[650px]"
+                className="object-cover xs:w-[300px] md:w-[500px] xl:w-[950px] xs:h-[320px] md:h-[500px] xl:h-[650px]"
               />
               {/* Superponer el nombre del lugar en el centro */}
               <div className="absolute inset-0 flex items-center justify-center">
